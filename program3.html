@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student registration form</title>
+        <style>
+            body{
+                font-family:arial,sans-serif;
+                background:#e8f5e9;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                height:100vh;
+            }
+            .container{
+                width:450px;
+                background:white;
+                padding:25px;
+                border-radius:12px;
+                box-shadow:0 0 10px gray;
+            }
+            h2{text-align:center;
+            color:#2e7d32;}
+            label{font-weight:bold;}
+            input,select{width:100%;
+            padding:8px;
+            margin-top:5px;
+            margin-bottom:15px;
+            border-radius:5px;
+        }
+        input[type="submit"]{
+            background:#4caf50;
+            color:white;
+            border:none;
+            cursor:pointer;
+            font-size:16px;
+        }
+        input[type="submit"]:hover{
+            background:#2e7d32;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>student registration form</h2>
+            <form>
+                <label>student name</label>
+                <input type="text"
+                placeholder="enter name"
+                required>
+                <label>usn</label>
+                <input type="text"
+                placeholder="enter usn"
+                required>
+                <label>email</label>
+                <input tye="email"
+                placeholder="enter email"
+                required>
+                <label>mobile number</label>
+                <input 
+                   type="tel"
+                   placeholder="10-digit mobile number"
+                   pattern="[0-9]{10}"
+                   required>
+                   <label>age</label>
+                 <input type="number"
+                 min="17"
+                 max="30"
+                 required>
+                 <label>couse</label>
+                 <select required>
+                    <option>bca</option>
+                    <option>bsc</option>
+                    <option>bcom</option>
+                 </select>
+                 <label>password</label>
+                 <input type="password"
+                 required>
+                 <label>upload photo</label>
+                 <input type="file">
+                 <input
+                 type="submit"
+                 value=""register">
+            </form>
+        </div>
+    </body>
+</html>
